@@ -17,7 +17,7 @@ jobs:
     - run: rustup target add wasm32-unknown-unknown
     - run: cargo install trunk
     # rust-yew-resume
-    - run: trunk build --release --public-url rust-yew-resume
+    - run: trunk build --release
     - run: cp -r ./dist/ ./public/
     - uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
