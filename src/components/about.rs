@@ -12,7 +12,7 @@ pub fn about(AboutProps {avatar, name, profession}: &AboutProps) -> Html {
     html! {
         <div>
             <div>
-                <img src={avatar.clone()} alt={name.clone()}/>
+                <img src={avatar.clone()}/>
             </div>
             <div>
                 <h1>{name}</h1>
