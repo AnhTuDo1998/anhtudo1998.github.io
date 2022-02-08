@@ -1,0 +1,53 @@
+html,
+body {
+  background-color: #dfe7e2;
+  font-family: Open Sans,Arial,Helvetica,sans-serif;
+  color: #333;
+  font-size: 16px;
+  margin: 0;
+}
+
+.root {
+  // Flex-box parent allow wrapping
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sidebar {
+  flex-grow: 1;
+  background-color:#55859b;
+  color: #f4f4f4;
+
+  height: 100vh;
+  float: left;
+
+  padding-top: 20px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 60%;
+
+  float:right;
+}
+
+.sidebar h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+}
+
+.sidebar h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-top: 0.2em;
+}
