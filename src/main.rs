@@ -3,6 +3,7 @@ use yew::prelude::*;
 mod components;
 use components::about::About;
 use components::contact::{ContactList, SocialLink};
+use components::greeting::Greeting;
 
 #[function_component(App)]
 fn app() -> Html {
@@ -26,7 +27,12 @@ fn app() -> Html {
             link: "mailto:anhtu.do1998@gmail.com".to_string(),
         },
     ];
-
+    let greeting_msg = vec!["I am Anh Tu, a young IT professional working in Singapore. I graduated from SCSE NTU Singapore in 2021, studying Computer Engineering. I am, currently an Embedded Software Engineer at Thales (DIS) Singapore, focusing on developing operating systems for embedded Secure Elements.",
+    "During free time, I love to explore new technologies to broaden my horizons. I am currently learning and building various projects in Rustlang, from web to blockchain to embedded projects."];
+    // TODO
+    let resume_link = "thisisalink";
+    
+    // HTML skeleton
     html! {
         <>
             <header>
@@ -36,7 +42,7 @@ fn app() -> Html {
                     <ContactList contacts={socials}/>
                 </div>
                 <div class="content">
-                    <p>{"Example test here here!"}</p>
+                    <Greeting {resume_link} messages={greeting_msg}/>
                 </div>
             </div>
             </header>
