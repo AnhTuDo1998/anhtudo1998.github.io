@@ -1,4 +1,4 @@
-use yew::{function_component, Properties, html, Html};
+use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct AboutProps {
@@ -8,16 +8,18 @@ pub struct AboutProps {
 }
 
 #[function_component(About)]
-pub fn about(AboutProps {avatar, name, profession}: &AboutProps) -> Html {
+pub fn about(
+    AboutProps {
+        avatar,
+        name,
+        profession,
+    }: &AboutProps,
+) -> Html {
     html! {
         <div>
-            <div>
-                <img src={avatar.clone()}/>
-            </div>
-            <div>
-                <h1>{name}</h1>
-                <h2>{profession}</h2>
-            </div>
+            <img src={avatar.clone()}/>
+            <h1>{name}</h1>
+            <h2>{profession}</h2>
         </div>
     }
 }
