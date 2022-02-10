@@ -4,6 +4,7 @@ mod components;
 use components::about::About;
 use components::contact::{ContactList, SocialLink};
 use components::greeting::Greeting;
+use components::education::Education;
 
 #[function_component(App)]
 fn app() -> Html {
@@ -31,6 +32,17 @@ fn app() -> Html {
     "During free time, I love to explore new technologies to broaden my horizons. I am currently learning and building various projects in Rustlang, from web to blockchain to embedded projects."];
     // TODO
     let resume_link = "thisisalink";
+    let school = "Nanyang Technological University";
+    let degree = "B.Eng - Computer Engineering";
+    let time = "July 2017 - June 2021";
+    let education_details = vec![
+        "GPA: 4.76/5.00",
+        "Honours (Highest Distinction)",
+        "Elective Focus in Artificial Intelligence and Data Science",
+        "Dean's List (AY 2018-2019 & AY 2020-2021)",
+        "NTU CAC Lindy Hop - Chairperson (AY18/19), Dance Captain (AY19/20)",
+        "NTU SCSE Club - Academic Subcommittee Member (AY19/20)"
+    ];
     
     // HTML skeleton
     html! {
@@ -43,6 +55,7 @@ fn app() -> Html {
                 </div>
                 <div class="content">
                     <Greeting {resume_link} messages={greeting_msg}/>
+                    <Education {school} {degree} {time} info_list={education_details}/>
                 </div>
             </div>
             </header>
