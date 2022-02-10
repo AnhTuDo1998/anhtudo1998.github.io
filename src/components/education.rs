@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
-pub struct EducationProps{
+pub struct EducationProps {
     pub school: String,
     pub degree: String,
     pub time: String,
@@ -9,12 +9,23 @@ pub struct EducationProps{
     //pub logo: String,
 }
 
-
 #[function_component(Education)]
-pub fn education(EducationProps {school, degree, time, info_list}:&EducationProps) -> Html {
-    let education_details : Html = info_list.iter().map(|info| html! {
-        <li>{info}</li>
-    }).collect();
+pub fn education(
+    EducationProps {
+        school,
+        degree,
+        time,
+        info_list,
+    }: &EducationProps,
+) -> Html {
+    let education_details: Html = info_list
+        .iter()
+        .map(|info| {
+            html! {
+                <li>{info}</li>
+            }
+        })
+        .collect();
 
     html!(
         <div class="education-info">
@@ -26,6 +37,4 @@ pub fn education(EducationProps {school, degree, time, info_list}:&EducationProp
             </u>
         </div>
     )
-
-
 }
