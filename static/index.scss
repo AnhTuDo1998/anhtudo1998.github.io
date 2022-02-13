@@ -5,12 +5,20 @@ body {
   color: #333;
   font-size: 16px;
   margin: 0;
+  padding: 0;
+
+  height: 100vh;
+  overflow-y: hidden;
+
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .root {
-  // Flex-box parent allow wrapping
+  // Flex-box no wrapping for big screen
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -35,7 +43,9 @@ body {
 .content {
   flex-basis: 0;
   flex-grow: 999;
-  min-inline-size: 60%;
+
+  height: 100vh;
+  overflow-y: scroll;
 
   float:right;
 }
@@ -61,4 +71,38 @@ body {
 
 .contacts li {
   list-style-type: none;
+}
+
+// For icons
+.fa-solid {
+  color: #f4f4f4;
+  font-size: 3em;
+}
+
+.fa-brands {
+  color: #f4f4f4;
+  font-size: 3em;
+}
+
+// Media breakpoint
+@media only screen and (max-width: 768px) {
+  html, body {
+    height: 100%;
+    overflow-y: visible;
+  }
+
+  .root {
+    // Flex-box parent allow wrapping for small screens
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    overflow-y: visible;
+  }
+
+  .content {
+    min-inline-size: 60%;
+    overflow-y: visible;
+  }
+
 }
