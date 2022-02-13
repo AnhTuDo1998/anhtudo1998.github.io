@@ -19,14 +19,17 @@ fn app() -> Html {
             link: "https://www.linkedin.com/in/anhtudo1998
         "
             .to_string(),
+            fa_string: "fa-brands fa-linkedin".to_string()
         },
         SocialLink {
             platform: "github".to_string(),
             link: "https://www.github.com/AnhTuDo1998".to_string(),
+            fa_string: "fa-brands fa-github-square".to_string()
         },
         SocialLink {
             platform: "mail".to_string(),
             link: "mailto:anhtu.do1998@gmail.com".to_string(),
+            fa_string: "fa-solid fa-envelope".to_string()
         },
     ];
     let greeting_msg = vec!["I am Anh Tu, a young IT professional working in Singapore. I graduated from SCSE NTU Singapore in 2021, studying Computer Engineering. I am, currently an Embedded Software Engineer at Thales (DIS) Singapore, focusing on developing operating systems for embedded Secure Elements.",

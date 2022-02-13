@@ -4,6 +4,7 @@ use yew::prelude::*;
 pub struct SocialLink {
     pub platform: String,
     pub link: String,
+    pub fa_string: String,
 }
 
 #[derive(PartialEq, Properties)]
@@ -19,7 +20,7 @@ pub fn contact_list(props: &ContactListProps) -> Html {
         .map(|social| {
             html! {
                 <li id={social.platform.clone()}>
-                    <a href={social.link.clone()}>{social.platform.clone()}</a>
+                    <a href={social.link.clone()}><i class={social.fa_string.clone()}/></a>
                 </li>
             }
         })
