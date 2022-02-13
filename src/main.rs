@@ -57,10 +57,17 @@ fn app() -> Html {
             responsibility: vec!["placeholder"],
         },
         JobInfo {
+            company: "Nanyang Technological University, Singapore".to_string(),
+            position: "Student Research Assistant (Part-time)".to_string(),
+            time: "May 2021 - Jul 2021".to_string(),
+            techstack: "C, C++, Cmake, Linux".to_string(),
+            responsibility: vec!["placeholder"],
+        },
+        JobInfo {
             company: "Thermo Fisher Scientific".to_string(),
             position: "Firmware Engineer Intern".to_string(),
             time: "Jan 2020 - Jul 2020".to_string(),
-            techstack: "C, Python, Keil uVision, Bitbucket, Jira, git".to_string(),
+            techstack: "C, Python,Linux , Keil uVision, Bitbucket, Jira, git".to_string(),
             responsibility: vec!["placeholder"],
         },
         JobInfo {
