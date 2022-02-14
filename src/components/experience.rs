@@ -29,7 +29,7 @@ pub fn job(props: &JobInfoProps) -> Html {
     html!(
         <div class="experience-card">
             <h2>{format!("{} - {}",props.info.company, props.info.position)}</h2>
-            <h2>{props.info.time.clone()}</h2>
+            <h3>{props.info.time.clone()}</h3>
             <u>{job_resp_details}</u>
             <p>{format!("Techstack: {}",props.info.techstack)}</p>
         </div>
