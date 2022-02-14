@@ -27,7 +27,7 @@ pub fn greeting(
         <div class="greeting">
             <h1>{"Hello World!"}</h1>
             {messages}
-            <p>{"Check out my resume at "}<a href={resume_link.clone()}>{"here"}</a></p>
+            <p>{"Get a PDF version of this web-resume "}<a href={resume_link.clone()}>{"here"}</a></p>
         </div>
     }
 }

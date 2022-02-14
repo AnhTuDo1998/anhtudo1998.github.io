@@ -19,17 +19,17 @@ fn app() -> Html {
             link: "https://www.linkedin.com/in/anhtudo1998
         "
             .to_string(),
-            fa_string: "fa-brands fa-linkedin".to_string()
+            fa_string: "fa-brands fa-linkedin".to_string(),
         },
         SocialLink {
             platform: "github".to_string(),
             link: "https://www.github.com/AnhTuDo1998".to_string(),
-            fa_string: "fa-brands fa-github-square".to_string()
+            fa_string: "fa-brands fa-github-square".to_string(),
         },
         SocialLink {
             platform: "mail".to_string(),
             link: "mailto:anhtu.do1998@gmail.com".to_string(),
-            fa_string: "fa-solid fa-envelope".to_string()
+            fa_string: "fa-solid fa-envelope".to_string(),
         },
     ];
     let greeting_msg = vec!["I am Anh Tu, a young IT professional working in Singapore. I graduated from SCSE NTU Singapore in 2021, studying Computer Engineering. I am, currently an Embedded Software Engineer at Thales (DIS) Singapore, focusing on developing operating systems for embedded Secure Elements.",
@@ -54,28 +54,37 @@ fn app() -> Html {
             position: "Embedded Software Engineer".to_string(),
             time: "Sep 2021 - Current".to_string(),
             techstack: "C, Java, Keil uVision, Bitbucket, Jira, git".to_string(),
-            responsibility: vec!["placeholder"],
+            responsibility: vec!["Analyze potential C language vulnerabilities and implements fixes for Thales's propietary card OS.",
+            "Monitor code coverage of low-level OS module for use in CC certification.", "Devise OS test plan for 2 products of embedded Secure Element."],
         },
         JobInfo {
             company: "Nanyang Technological University".to_string(),
             position: "Research Assistant".to_string(),
             time: "May 2021 - Jul 2021".to_string(),
             techstack: "C, C++, Cmake, Linux".to_string(),
-            responsibility: vec!["placeholder"],
+            responsibility: vec!["Build embedded Linux images for Xilinx ZCU102 FPGA based on Yocto Project and Xilinx's Petalinux for evaluations of SLAM algorithm.",
+            "Migrate SLAM algorithms from x64 to aarch64 system.", "Set up CMake and cross-compilation toolchain for building dependencies and libraries of system from source.",
+            "Integrate SLAM algoritms to the built images and evaluate the system performance at runtime."],
         },
         JobInfo {
             company: "Thermo Fisher Scientific".to_string(),
             position: "Firmware Engineer Intern".to_string(),
             time: "Jan 2020 - Jul 2020".to_string(),
-            techstack: "C, Python,Linux , Keil uVision, Bitbucket, Jira, git".to_string(),
-            responsibility: vec!["placeholder"],
+            techstack: "C, Python, Linux , Keil uVision, Bitbucket, Jira, git".to_string(),
+            responsibility: vec!["Design internal Python-based tool for communicating and sniffing CAN-based protocols.",
+            "Design a rotating 4 electro-magnets system with ARM CMSIS RTOS for use by internal scientists to carry out biomolecular experiment.",
+            "Set up Amazon FreeRTOS on NXP iMXRT1020EVK MCUs and tested its integration to AWS IoT
+            services as potential alternative for MQTT client in production.", "Design a low-level library for playing tunes on piezo buzzers to provide notification sounds to
+            users in company’s upcoming products."],
         },
         JobInfo {
             company: "Konini Vending Automation".to_string(),
             position: "Hardware Engineer".to_string(),
             time: "May 2019 - Jul 2019".to_string(),
             techstack: "C, Java, Keil uVision, Bitbucket, Jira, git".to_string(),
-            responsibility: vec!["placeholder"],
+            responsibility: vec!["Collect food’s images and labelled them to train object detection models which are then
+            integrated to the company’s new products.","Design testing plans and conducted black box testing on the company’s unmanned fridges,
+            unmanned lockers and unmanned food canteen for quality assurance before deployments."],
         },
     ];
 

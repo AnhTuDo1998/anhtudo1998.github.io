@@ -90,8 +90,9 @@ body {
 // Main content
 .experience-card {
   border: 2px solid #87928a;
-  border-radius: 10px;
-  padding: 1rem;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -101,17 +102,17 @@ body {
 }
 
 .content h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #b16139;
 }
 
 .content h2 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #55859b;
 }
 
 .content h3 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .greeting {
