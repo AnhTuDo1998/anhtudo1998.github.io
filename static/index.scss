@@ -2,7 +2,7 @@ html,
 body {
   background-color: #dfe7e2;
   font-family: Open Sans,Arial,Helvetica,sans-serif;
-  color: #333;
+  color: #232a25;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -102,14 +102,24 @@ body {
 
 .content h1 {
   font-size: 1.5em;
+  color: #b16139;
 }
 
 .content h2 {
   font-size: 1.3em;
+  color: #55859b;
 }
 
 .content h3 {
-  font-size: 1.1em;
+  font-size: 1em;
+}
+
+.greeting {
+  margin-bottom: 3rem;
+}
+
+.experience-section {
+  margin-bottom: 3rem;
 }
 
 // Media breakpoint
