@@ -48,6 +48,9 @@ body {
   overflow-y: scroll;
 
   float:right;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 
 .sidebar h1 {
@@ -82,6 +85,31 @@ body {
 .fa-brands {
   color: #f4f4f4;
   font-size: 3em;
+}
+
+// Main content
+.experience-card {
+  border: 2px solid #87928a;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.content u {
+  text-decoration: none;
+}
+
+.content h1 {
+  font-size: 1.5em;
+}
+
+.content h2 {
+  font-size: 1.3em;
+}
+
+.content h3 {
+  font-size: 1.1em;
 }
 
 // Media breakpoint

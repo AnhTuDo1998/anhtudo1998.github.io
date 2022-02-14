@@ -57,8 +57,8 @@ fn app() -> Html {
             responsibility: vec!["placeholder"],
         },
         JobInfo {
-            company: "Nanyang Technological University, Singapore".to_string(),
-            position: "Student Research Assistant (Part-time)".to_string(),
+            company: "Nanyang Technological University".to_string(),
+            position: "Research Assistant".to_string(),
             time: "May 2021 - Jul 2021".to_string(),
             techstack: "C, C++, Cmake, Linux".to_string(),
             responsibility: vec!["placeholder"],

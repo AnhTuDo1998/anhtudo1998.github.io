@@ -27,7 +27,7 @@ pub fn job(props: &JobInfoProps) -> Html {
         })
         .collect();
     html!(
-        <div>
+        <div class="experience-card">
             <h2>{format!("{} - {}",props.info.company, props.info.position)}</h2>
             <h2>{props.info.time.clone()}</h2>
             <u>{job_resp_details}</u>
@@ -44,7 +44,7 @@ pub struct ExperienceListProps {
 #[function_component(ExperienceList)]
 pub fn experience_list(ExperienceListProps { jobs }: &ExperienceListProps) -> Html {
     html! {
-        <div>
+        <div class="experience-section">
         <h1>{"Experience"}</h1>
         {jobs.iter().map(|job| html! {
             <Job info={job.clone()}/>
