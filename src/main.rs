@@ -4,7 +4,7 @@ mod components;
 use components::about::About;
 use components::contact::{ContactList, SocialLink};
 use components::education::Education;
-use components::experience::{ExperienceList, JobInfo};
+use components::experience::{ExperienceList, JobInfo, Referrer};
 use components::greeting::Greeting;
 
 #[function_component(App)]
@@ -56,6 +56,7 @@ fn app() -> Html {
             techstack: "C, Java, Keil uVision, Bitbucket, Jira, git".to_string(),
             responsibility: vec!["Analyze potential C language vulnerabilities and implements fixes for Thales's propietary card OS.",
             "Monitor code coverage of low-level OS module for use in CC certification.", "Devise OS test plan for 2 products of embedded Secure Element."],
+            referrer: None,
         },
         JobInfo {
             company: "Nanyang Technological University".to_string(),
@@ -65,6 +66,7 @@ fn app() -> Html {
             responsibility: vec!["Build embedded Linux images for Xilinx ZCU102 FPGA based on Yocto Project and Xilinx's Petalinux for evaluations of SLAM algorithm.",
             "Migrate SLAM algorithms from x64 to aarch64 system.", "Set up CMake and cross-compilation toolchain for building dependencies and libraries of system from source.",
             "Integrate SLAM algoritms to the built images and evaluate the system performance at runtime."],
+            referrer: Some(Referrer {name: "Lam Siew Kei".to_string(), title: "Associate Professor".to_string(), contact: "mailto:ASSKLAM@NTU.EDU.SG".to_string()})
         },
         JobInfo {
             company: "Thermo Fisher Scientific".to_string(),
@@ -76,6 +78,7 @@ fn app() -> Html {
             "Set up Amazon FreeRTOS on NXP iMXRT1020EVK MCUs and tested its integration to AWS IoT
             services as potential alternative for MQTT client in production.", "Design a low-level library for playing tunes on piezo buzzers to provide notification sounds to
             users in company’s upcoming products."],
+            referrer: Some(Referrer {name: "Shi Benyong".to_string(), title: "Staff Software Engineer".to_string(), contact: "https://sg.linkedin.com/in/benyong-shi".to_string()})
         },
         JobInfo {
             company: "Konini Vending Automation".to_string(),
@@ -85,6 +88,7 @@ fn app() -> Html {
             responsibility: vec!["Collect food’s images and labelled them to train object detection models which are then
             integrated to the company’s new products.","Design testing plans and conducted black box testing on the company’s unmanned fridges,
             unmanned lockers and unmanned food canteen for quality assurance before deployments."],
+            referrer: None,
         },
     ];
 

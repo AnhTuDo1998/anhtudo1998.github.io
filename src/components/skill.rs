@@ -1,1 +1,1 @@
-use yew::{function_component, html, Html};
+use yew::prelude::*;
