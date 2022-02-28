@@ -88,7 +88,7 @@ body {
 }
 
 // Main content
-.experience-card {
+.experience-card, .project-card {
   border: 2px solid #87928a;
   border-radius: 20px;
   padding-left: 2rem;
@@ -119,7 +119,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.experience-section {
+.experience-section, .project-section {
   margin-bottom: 3rem;
 }
 

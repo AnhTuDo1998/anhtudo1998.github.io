@@ -6,6 +6,7 @@ use components::contact::{ContactList, SocialLink};
 use components::education::Education;
 use components::experience::{ExperienceList, JobInfo, Referrer};
 use components::greeting::Greeting;
+use components::project::{ProjectList, ProjectInfo};
 
 #[function_component(App)]
 fn app() -> Html {
@@ -92,6 +93,30 @@ fn app() -> Html {
         },
     ];
 
+    let personal_projects = vec![
+        ProjectInfo {
+            title: "Email Newsletter System".to_string(),
+            category:"Web Development".to_string(),
+            link: "https://github.com/AnhTuDo1998/newsletter-sys".to_string(),
+            techstack: "Rust (actix-web - backend)".to_string(),
+            description: vec!["Build a newsletter system with subscribe/unsubscribe service.".to_string()]
+        },
+        ProjectInfo {
+            title: "Yet Another CHIP-8 (YARCH8) Emulator".to_string(),
+            category:"Emulator Development".to_string(),
+            link: "https://github.com/AnhTuDo1998/yarch8".to_string(),
+            techstack: "Rust, SDL2".to_string(),
+            description: vec!["Build a CHIP-8 emulator.".to_string()]
+        },
+        ProjectInfo {
+            title: "Personal Resume (this website)".to_string(),
+            category:"Web Development".to_string(),
+            link: "https://github.com/AnhTuDo1998/AnhTuDo1998.github.io".to_string(),
+            techstack: "Rust (Yew.rs - frontend)".to_string(),
+            description: vec!["Build a personal resume.".to_string()]
+        }
+    ];
+
     // HTML skeleton
     html! {
         <>
@@ -104,6 +129,7 @@ fn app() -> Html {
                 <div class="content">
                     <Greeting {resume_link} messages={greeting_msg}/>
                     <ExperienceList jobs={experiences}/>
+                    <ProjectList projects={personal_projects}/>
                     <Education {school} {degree} {time} info_list={education_details}/>
                 </div>
             </div>
