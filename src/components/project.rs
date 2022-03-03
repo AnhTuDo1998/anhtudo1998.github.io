@@ -28,7 +28,7 @@ pub fn project(props: &ProjectInfoProps) -> Html {
             <h2>{format!("{}", props.project_info.title)}</h2>
             <h3>{format!("Category: {}", props.project_info.category )}</h3>
             <u>{project_desc}</u>
-            <p>{"Source code for project is "}<a href={props.project_info.link.clone()}>{"here"}</a></p>
+            <p>{"Code/Report for project is "}<a href={props.project_info.link.clone()}>{"here"}</a></p>
             <p class="techstack">{format!("Technologies used: {}",props.project_info.techstack)}</p>
         </div>
     )

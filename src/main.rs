@@ -98,7 +98,7 @@ fn app() -> Html {
             title: "Email Newsletter System".to_string(),
             category:"Web Development".to_string(),
             link: "https://github.com/AnhTuDo1998/newsletter-sys".to_string(),
-            techstack: "Rust (actix-web - backend)".to_string(),
+            techstack: "Backend: actix-web (Rust), Postgresql, Docker".to_string(),
             description: vec!["Build a newsletter system with subscribe/unsubscribe service.".to_string()]
         },
         ProjectInfo {
@@ -106,14 +106,25 @@ fn app() -> Html {
             category:"Emulator Development".to_string(),
             link: "https://github.com/AnhTuDo1998/yarch8".to_string(),
             techstack: "Rust, SDL2".to_string(),
-            description: vec!["Build a CHIP-8 emulator.".to_string()]
+            description: vec!["Implemented a subset of 35 ocodes supported by CHIP-8 virtual machine specification.".to_string(),
+            "Implemented output rendering and key input events using Simple DirectMedia Layer library and Rust wrapper of it.".to_string()]
         },
         ProjectInfo {
             title: "Personal Resume (this website)".to_string(),
             category:"Web Development".to_string(),
             link: "https://github.com/AnhTuDo1998/AnhTuDo1998.github.io".to_string(),
-            techstack: "Rust (Yew.rs - frontend)".to_string(),
+            techstack: "Frontend: Yew (Rust), Docker, GitHub Actions".to_string(),
             description: vec!["Build a personal resume.".to_string()]
+        },        
+        ProjectInfo {
+            title: "Real-time Visual Localization System on an Embedded Platform".to_string(),
+            category:"Embedded Development - Final Year Project".to_string(),
+            link: "https://dr.ntu.edu.sg/handle/10356/148230".to_string(),
+            techstack: "C/C++, Python, ROS, CMake".to_string(),
+            description: vec!["Developed 2 distributed visual SLAM pipelines with 3.2fps pose estimation throughput as backbone for a 3D semantic mapping system".to_string(),
+            "Evaluated Pythorch semantic segmentation models and 2 optimization strategies to minimizing their inference time on NVIDIA Jetson Xavier NX platform.".to_string(),
+            "Integrated Python 2D semantic segmentation inference into C++ functions of ORB-SLAM2 to create a novel and light-weight SLAM system that is less prone to error from dynamic environments".to_string(),
+            "Designed a ROS node in Python to create 3D semantic pointclouds to build 3D occupancy grid maps in a probabilistic manne".to_string(),]
         }
     ];
 
