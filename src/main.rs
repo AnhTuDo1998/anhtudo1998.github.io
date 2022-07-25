@@ -24,7 +24,7 @@ fn app() -> Html {
         },
         SocialLink {
             platform: "github".to_string(),
-            link: "https://www.github.com/AnhTuDo1998".to_string(),
+            link: "https://www.github.com/codieboomboom".to_string(),
             fa_string: "fa-brands fa-github-square".to_string(),
         },
         SocialLink {
